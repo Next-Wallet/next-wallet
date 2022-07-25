@@ -33,9 +33,9 @@ export default function Home() {
             <p>POST to send ERC20s, 721s & 1155s.</p>
           </a>
 
-          <a className={styles.card} href="https://chainlist.org/">
+          <a className={styles.card} href="https://github.com/Next-Wallet/next-wallet/blob/main/src/rpc.json">
             <h2>EVM Agnostic</h2>
-            <p>Configure send to tokens on any chain.</p>
+            <p>Add RPCs send to tokens on any chain.</p>
           </a>
         </div>
       </main>

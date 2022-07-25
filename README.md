@@ -4,6 +4,10 @@ Server side wallet. REST API to interact with a wallet.
 
 ## Run Locally
 
+Clone
+
+`git clone https://github.com/Next-Wallet/next-wallet.git`
+
 Create `.env.local`
 
 ```
