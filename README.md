@@ -2,8 +2,6 @@
 
 Server side wallet. REST API to interact with a wallet.
 
-![](https://user-images.githubusercontent.com/19412160/180593317-d0306637-f3a2-45b4-8ca9-af2075b53e0f.png)
-
 ## Run Locally
 
 Create `.env.local`
