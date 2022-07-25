@@ -4,7 +4,7 @@ const { ethers } = require("ethers");
 
 const schema = Joi.object().keys({
   apiKey: Joi.string().required(),
-  chainId: Joi.number().required(), // 1: Ethereum, 2: Etherium Classic, 3: Ropsten, 4: Rinkeby, 5: Goerli, 42: Kovan
+  chainId: Joi.number().required(), // 1: Ethereum, 4: Rinkeby, 420: Goerli
   to: Joi.string().required(), // Address to send to
   amount: Joi.string().required(), // Amount in wei send
 });
