@@ -18,6 +18,5 @@
   "43113": "https://rpc.ankr.com/avalanche_fuji",
   "43114": "https://rpc.ankr.com/avalanche",
   "80001": "https://rpc.ankr.com/polygon_mumbai",
-  "1666600000": "https://rpc.ankr.com/harmony",
-  "1666700000": "https://api.s0.b.hmny.io/"
+  "1666600000": "https://rpc.ankr.com/harmony"
 }
