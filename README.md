@@ -40,4 +40,6 @@ https://documenter.getpostman.com/view/1292391/UzXKWJp4
 
 ## Deploy with Vercel
 
+https://vercel.com/
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnext-wallet%2Fnext-wallet)
