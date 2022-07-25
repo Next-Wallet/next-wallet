@@ -10,6 +10,8 @@ Clone
 
 Create `.env.local`
 
+`cp .env.local.example .env.local`
+
 ```
 PRIVATE_KEY=cc44c6f12b8fa5c731e962bf47970ebae236c7d5c0c40028855775799913f0ec
 API_KEY=key_to_allow_sending
