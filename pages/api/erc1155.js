@@ -5,11 +5,11 @@ const { ethers } = require("ethers");
 
 const schema = Joi.object().keys({
   apiKey: Joi.string().required(),
-  chainId: Joi.number().required(), // 1: Ethereum, 2: Etherium Classic, 3: Ropsten, 4: Rinkeby, 5: Goerli, 42: Kovan
-  contract: Joi.string().required(), // Address of the erc20 contract
+  chainId: Joi.number().required(), // 1: Ethereum, 4: Rinkeby, 420: Goerli
+  contract: Joi.string().required(), // Address of the erc1155 contract aka collection
   to: Joi.string().required(), // Address to send to
   tokenId: Joi.string().required(), // tokenId of the NFT collection 
-  amount: Joi.string().required(), // Amount in tokens send
+  amount: Joi.string().required(), // Amount of tokens send
 });
 
 // send coin aka ETH
