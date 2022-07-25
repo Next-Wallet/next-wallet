@@ -1,0 +1,34 @@
+const Joi = require("joi");
+const rpc = require("../../src/rpc");
+const abi1155 = require("../../src/abi1155");
+const { ethers } = require("ethers");
+
+const schema = Joi.object().keys({
+  apiKey: Joi.string().required(),
+  chainId: Joi.number().required(), // 1: Ethereum, 2: Etherium Classic, 3: Ropsten, 4: Rinkeby, 5: Goerli, 42: Kovan
+  contract: Joi.string().required(), // Address of the erc20 contract
+  to: Joi.string().required(), // Address to send to
+  tokenId: Joi.string().required(), // tokenId of the NFT collection 
+  amount: Joi.string().required(), // Amount in tokens send
+});
+
+// send coin aka ETH
+export default function handler(req, res) {
+  if (req.method !== "POST") return res.status(405).send({ error: "Only POST allowed" });
+  const { error, value } = schema.validate(req.body);
+  if (error) return res.status(400).send({ error: error.message });
+  if (value.apiKey !== process.env.API_KEY) return res.status(401).send({ error: "Invalid API key" });
+  const provider = new ethers.providers.JsonRpcProvider(rpc[value.chainId]);
+  const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
+  // connect to token
+  const contract = new ethers.Contract(value.contract, abi1155, wallet);
+  // call tranfer method
+  contract
+    .safeTransferFrom(wallet.address, value.to, value.tokenId, value.amount, "0x")
+    .then((tx) => {
+      res.status(200).json({ data: tx.hash });
+    })
+    .catch((err) => {
+      res.status(500).json({ error: err.message });
+    });
+}

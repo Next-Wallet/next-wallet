@@ -1,0 +1,23 @@
+{
+  "1": "https://rpc.ankr.com/eth",
+  "3": "https://rpc.ankr.com/eth_ropsten",
+  "4": "https://rpc.ankr.com/eth_rinkeby",
+  "10": "https://rpc.ankr.com/optimism",
+  "56": "https://rpc.ankr.com/bsc",
+  "57": "https://rpc.ankr.com/syscoin",
+  "97": "https://rpc.ankr.com/bsc_testnet_chapel",
+  "100": "https://rpc.ankr.com/gnosis",
+  "137": "https://rpc.ankr.com/polygon",
+  "250": "https://rpc.ankr.com/fantom",
+  "420": "https://rpc.ankr.com/eth_goerli",
+  "1284": "https://rpc.ankr.com/moonbeam",
+  "4002": "https://rpc.ankr.com/fantom_testnet",
+  "4689": "https://rpc.ankr.com/iotex",
+  "42161": "https://rpc.ankr.com/arbitrum",
+  "42220": "https://rpc.ankr.com/celo",
+  "43113": "https://rpc.ankr.com/avalanche_fuji",
+  "43114": "https://rpc.ankr.com/avalanche",
+  "80001": "https://rpc.ankr.com/polygon_mumbai",
+  "1666600000": "https://rpc.ankr.com/harmony",
+  "1666700000": "https://api.s0.b.hmny.io/"
+}
