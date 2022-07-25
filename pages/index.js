@@ -18,7 +18,7 @@ export default function Home() {
         <h2 className={styles.description}>An API Powered Server Side Wallet</h2>
 
         <div className={styles.grid}>
-          <a className={styles.card} href="">
+          <a className={styles.card} href="https://leondo.medium.com/play-to-earn-p2e-wallet-for-game-developers-118b9ef2c568">
             <h2>Overview</h2>
             <p>Server side wallets for web3 developers.</p>
           </a>
