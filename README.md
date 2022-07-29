@@ -2,6 +2,10 @@
 
 Server side wallet. REST API to interact with a wallet.
 
+## Article
+
+https://leondo.medium.com/play-to-earn-p2e-wallet-for-game-developers-118b9ef2c568
+
 ## Run Locally
 
 Clone
