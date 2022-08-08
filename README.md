@@ -24,7 +24,7 @@ API_KEY=key_to_allow_sending
 Install dependencies
 
 ```bash
-npm install 
+npm install
 # or
 yarn
 ```
@@ -36,7 +36,18 @@ npm run dev
 # or
 yarn dev
 ```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Add New Chains
+
+`src/rpc.json`
+
+```
+{
+    "77777": "https://myrpcurl.com"
+}
+```
 
 ## REST Endpoint Docs
 
